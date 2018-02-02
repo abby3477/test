@@ -1,0 +1,131 @@
+<div class="sui-navbar navBar" style="background-color: #FFFFFF;">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css">
+	<link rel="stylesheet" href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui-append.min.css">
+	<link rel="stylesheet" href="navigationBar.css">
+	<link rel="shortcut icon" href="/webapp/recruiters_release/favicon.ico">
+	<link rel="bookmark" href="/webapp/recruiters_release/favicon.ico">
+	<script type='text/javascript' src="http://g.tbcdn.cn/sj/lib/jquery/dist/jquery.min.js" charset='utf-8'></script>
+	<script type='text/javascript' src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js" charset='utf-8'></script>
+	<script type="text/javascript" src="../layer/layer.js"></script>
+
+	<div class="navbar-inner tc" style="background-color: #FFFFFF;">
+		<div class="fl">
+			<a id="home-img" href="#" class="sui-brand" style="line-height: 34px;">
+				<img style="height: 34px;" src="../img/logo_beta.png" />
+			</a>
+		</div>
+		<nav class="nav-title tc disinblock">
+			<ul class="disinblock color-8 f16">
+				<a id="navHomePage" class="color-6 pr disinblock"><li>首页</li></a>
+				<a id="navPosiManage" class="color-6 pr disinblock"><li>职位管理</li></a>
+				<a id="navTalent" class="color-6 pr disinblock"><li>人才库</li></a>
+				<a id="navTalentShore" class="color-6 pr disinblock"><li>人才交换</li></a>
+				<a id="robotSeeting" class="color-6 pr hide"><li>机器人管理</li></a>
+				<div class="cb"></div>
+			</ul>
+		</nav>
+
+		<div class="fr">
+			<ul class="sui-nav pull-right  nav-right">
+				<li class="sui-dropdown dropdown-xlarge align-right" style="margin-right: -20px;">
+					<a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle">
+						<span class="dropdown-inner" style="width: 150px;">
+                            <img id="user_header_img" class="nav-header-img" style="float: left;max-height: 35px;" src="../img/example_logo.png"/>
+                            <div style="float: left;width: 60px;margin-left: 5px;">
+                                <div id="user_name" class="" style="max-height: 40px;line-height: 40px; font-size: 14px; text-overflow: ellipsis; overflow: hidden !important;">--</div>
+                                <!--<div id="user_des" class="" style="max-height: 20px; font-size: 10px;text-overflow: ellipsis; overflow: hidden;">--</div>-->
+                            </div>
+                            <i class="caret" style="line-height: 34px;margin-left: 3px;"></i>
+                            </span>
+					</a>
+					<ul role="menu" aria-labelledby="drop2" class="sui-dropdown-menu nav-right" style="width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-right: -1px;
+    border: none;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.075);
+    -webkit-box-shadow: 0px 3px 10px rgba(0,0,0,0.075);
+    -moz-box-shadow: 0px 3px 10px rgba(0,0,0,0.075);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0;
+    overflow: hidden;">
+						<!--<li role="presentation">
+                        <a role="menuitem" tabindex="-1" style="height: 30px;" id="navPersonalInfo">个人信息</a>
+                    </li>-->
+						<li role="presentation">
+							<a role="menuitem" tabindex="-1" style="height: 50px;" id="navCompanyInfo">公司信息</a>
+						</li>
+						<!--<li role="presentation">
+                        <a role="menuitem" tabindex="-1" style="height: 30px;" id="navComment">我的评价</a>
+                    </li>-->
+						<li role="presentation">
+							<a role="menuitem" tabindex="-1" style="height: 50px;" id="navAcountSetting">账号设置</a>
+						</li>
+						<!--<li role="presentation">
+                        <a role="menuitem" tabindex="-1" style="height: 30px;" id="navSecretSetting">隐私设置</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" style="height: 30px;" id="navRemoveBinding">解除关联</a>
+                    </li>-->
+						<li role="presentation" class="divider"></li>
+						<li role="presentation">
+							<a role="menuitem" tabindex="-1" id="navLoginOut">退出</a>
+						</li>
+			</ul>
+			</li>
+			</ul>
+			<ul class="sui-nav pull-right nav-menu">
+				<li class="sui-dropdown dropdown-xlarge align-right" style="margin-right: -1rem;">
+					<a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle">
+						<span class="dropdown-inner" style="width: 2rem;">
+                            <img style="margin-top: 0.4rem;margin-bottom: 0.2rem;" src="../img/nav_menu.png"/>
+                            </span>
+					</a>
+
+					<ul role="menu" aria-labelledby="drop2" class="sui-dropdown-menu" style="width: 5rem; font-size: 16px; text-align: center;">
+						<li role="presentation">
+							<a id="navHomePagePhone" role="menuitem" tabindex="-1" style="height: 1.5rem;">首页</a>
+						</li>
+						<li role="presentation">
+							<a id="navPosiManagePhone" role="menuitem" tabindex="-1" style="height: 1.5rem;">职位管理</a>
+						</li>
+						<li role="presentation">
+							<a id="navTalentPhone" role="menuitem" tabindex="-1" style="height: 1.5rem;">人才库</a>
+						</li>
+						<li role="presentation">
+							<a id="navMessagePhone" role="menuitem" tabindex="-1" style="height: 1.5rem;">消息</a>
+						</li>
+						<li role="presentation">
+							<a id="navLoginOutPhone" role="menuitem" tabindex="-1" style="height: 1.5rem;">退出账号</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul class="sui-nav pull-right  nav-right">
+				<li class="align-right nav-question" style="float: left;margin-top: 20px;">
+					<i id="nav-question" class="iconfont nav-question-on" data-tooltip="">&#xe637;</i>
+				</li>
+				<li class="align-right" style="float: left;max-height: 35px;border-right: 1px solid #ebebeb;margin-top: 10px;">
+					<img id="btnOfMessage" class="nav-header-mess" />
+				</li>
+			</ul>
+		</div>
+
+		<!--<div class="nav-title-line-content">
+			<div id="navTitleLine1" class="nav-title-line"></div>
+			<div id="navTitleLine2" class="nav-title-line"></div>
+			<div id="navTitleLine3" class="nav-title-line"></div>
+			<div id="navTitleLine4" class="nav-title-line"></div>
+		</div>-->
+	</div>
+	<script type='text/javascript' src='../0gmi_main.js' charset='utf-8'></script>
+	<script type='text/javascript' src='navigationBar.js' charset='utf-8'></script>
+</div>

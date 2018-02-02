@@ -1,0 +1,67 @@
+<div class="footer" style="color: #989898;">
+    <div class="footer-hyperlink">
+        <a href="/webapp/recruiters_release/indexFile/linkhtml/aboutUs.html" target="_blank">关于我们</a> |
+       <!--  <a href="/webapp/recruiters_release/indexFile/linkhtml/businessContact.html">商务合作</a> | -->
+        <!-- <a href="/webapp/recruiters_release/indexFile/linkhtml/agreement.html" target="_blank" class="userAgreement">用户协议</a> | -->
+        <!--<a href="#">帮助</a> |
+        <a href="#">隐私协议</a> |-->
+        <a href="/webapp/recruiters_release/indexFile/linkhtml/businessContact.html" target="_blank">联系我们</a>
+<!--        <a href="#">意见反馈</a>-->
+    </div>
+    <div class="" style="margin-top: 5px;">
+        Copyright©2017 milihr.com All Rights Reserved 苏ICP备15034175
+    </div>
+</div>
+<div class="index-sift tc radius goto-top" id="back-to-top" data-am-smooth-scroll><img src="../img/to-top.png"></div>
+<script type="text/javascript" src="../jquery.darktooltip.min.js" ></script>
+<script src="http://at.alicdn.com/t/font_zwv31nqgtecxflxr.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+//首先将#back-to-top隐藏
+ $("#back-to-top").hide();
+
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+    $(function () {
+        $(window).scroll(function(){
+        if ($(window).scrollTop()>100){
+            $("#back-to-top").fadeIn(1000);
+        }else{
+            $("#back-to-top").fadeOut(1000);
+        }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function(){
+            $('body,html').animate({scrollTop:0},1000);
+            return false;
+        });
+        //tips
+        $('.color-guide-tip').darkTooltip({
+		animation:'flipIn',
+		gravity: 'west'
+	});
+	$('.guide-tip-east').darkTooltip({
+		animation:'flipIn',
+		gravity: 'east'
+	});
+	//头部引导
+	if($("#nav-question").hasClass("nav-question-on")){
+	$("#nav-question").attr("data-tooltip","关闭帮助Tips");
+	$("#nav-question").darkTooltip({
+		animation:'flipIn',
+		gravity: 'east',
+		theme:'light'
+	});
+}else if($("#nav-question").hasClass("nav-question-off")){
+	$("#nav-question").attr("data-tooltip","打开帮助Tips");
+	$("#nav-question").darkTooltip({
+		animation:'flipIn',
+		gravity: 'east',
+		theme:'light'
+	});
+};
+
+        
+    });
+
+});
+</script>
